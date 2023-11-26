@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 16px;
+}
+
+.categoria>h3{
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #2B3035;
+    color: white;
+    padding: 8px;
+    text-transform: capitalize;
+}
+
+.lista{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 16px;
+}
+
+.tareaCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 16px;
+    background-color: #bcf0d3;
+}
+
+.tareaCard img{
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    
+}
+
+.textoCard{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 8px;
+    margin: 8px 0;
+    border-bottom: 1px solid gray;
+}
+
+.textoCard h5{
+    text-align: center;
+}
+
+.footerCard{
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.footerCard a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #0e5f4e;
+    color: white;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .lista{
+        grid-template-columns: repeat(2, 45%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .lista{
+        grid-template-columns: repeat(3, 30%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .lista{
+        grid-template-columns: repeat(4, 22%);
+    }
+}

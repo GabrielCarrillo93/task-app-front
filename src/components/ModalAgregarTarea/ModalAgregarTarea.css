@@ -1,0 +1,14 @@
+.fondo{
+    background-color: #bcf0d3;
+}
+
+.botoncito{
+    display: flex;
+}
+
+.boton{
+    background-color: #0e5f4e;
+    padding: 8px 16px;
+    margin: 0 auto;
+}
+
